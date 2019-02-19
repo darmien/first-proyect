@@ -9,7 +9,8 @@
 
 body{
     background: rgb(12, 12, 12);
-}
+   }
+
 
 header{
     padding: 10px 100px;
@@ -29,7 +30,6 @@ section.sec1{
     background: url(../imagenes/4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
 }
 
 section.sec2{
@@ -55,6 +55,7 @@ nav{
     border-bottom: 1px solid rgba(255, 255, 255, .2);
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 nav ul{
@@ -74,6 +75,10 @@ nav ul li a{
     text-transform: uppercase;
     font-weight: bold;
     line-height: 50px;
+}
+
+nav ul li a:hover{
+    background: rgba(77, 75, 75, 0.8);
 }
 
 .sec4 p{
@@ -101,10 +106,10 @@ nav ul li a{
     font-size: 1.6em;
     color: red;
     background: grey;
+    transition: 1.5s;
 }
 #texto_shop a:hover{
-    transition: 0.5s;
-    font-size: 1.7em;
+    
     background: rgb(119, 3, 3);
 }
 
@@ -123,9 +128,11 @@ footer{
 
 .sec2 img{
     float: right;
-    width: 50%;
-    height: 100%;
-    padding: 100px 25px;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    right: calc(25% - 250px);
+    bottom: calc(25% - 250px);
 }
 
 .contenedor_index{
@@ -133,14 +140,18 @@ footer{
     width: 33%;
     text-transform: uppercase;
     text-align: center;
-    padding:0;
+    padding: 50px 0px;
     margin-top:50px;
     margin-bottom: 50px;
     display:inline-block;
+    position: relative;
+    left: calc(25% - 217px);
+    top: calc(33% - 104px);
 }
 .contenedor_index p{
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 25px;
+    line-height: 50px;
+    font-family: 'barloesius_schriftregular';
 }
 
 .socialbar ul{
@@ -149,6 +160,24 @@ footer{
 
 .socialbar ul li{
     display: inline-block;
+}
+
+.socialbar i{
+    transition: 0.2s linear;
+    letter-spacing: 20px;
+}
+
+.socialbar i:hover{
+    transform: scale(1.3);
+}
+
+#getcd{
+    border: 3px solid white;
+    padding: 15px;
+    display: inline-block;
+    background: rgb(150, 36, 16);
+    color: white;
+    text-transform: uppercase;
 }
 
 /*TOUR STYLE*/
@@ -185,3 +214,97 @@ section.music_sec1{
 section.shop_sec1 img{
 max-width: 25%;
 }
+
+/*gallery*/
+
+.gallerynav{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.gallerynav ul{
+    display:inline-block;
+    padding: 0 100px;
+    
+}
+
+.gallerynav ul li{
+    float: left;
+}
+
+.gallerynav ul li a{
+    display:block;
+    color: #fff;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.contain{
+    position: relative;
+    width: 100%;
+}
+
+.contain .gallerysection{
+    position:sticky;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+
+.contain .gallerysection:nth-child(1){
+    background: url(../imagenes/sticky/bg1.jpg);
+    background-size: contain;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(2){
+    background: url(../imagenes/sticky/bg2.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(3){
+    background: url(../imagenes/sticky/bg3.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(4){
+    background: url(../imagenes/sticky/bg4.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(5){
+    background: url(../imagenes/sticky/bg5.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(6){
+    background: url(../imagenes/sticky/bg6.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(7){
+    background: url(../imagenes/sticky/bg7.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(8){
+    background: url(../imagenes/sticky/bg8.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(9){
+    background: url(../imagenes/sticky/bg9.jpg);
+    background-size: cover;
+    z-index: 2
+}
+.contain .gallerysection:nth-child(10){
+    background: url(../imagenes/sticky/bg10.jpg);
+    background-size: cover;
+    z-index: 2
+}
+
