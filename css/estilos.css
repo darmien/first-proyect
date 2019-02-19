@@ -1,0 +1,187 @@
+*{
+    padding: 0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: rgb(12, 12, 12);
+}
+
+header{
+    padding: 10px 100px;
+    text-align: center;
+}
+
+header h1 img{
+    width: 200px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section.sec1{
+    background: url(../imagenes/4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+}
+
+section.sec2{
+    height: 100vh;
+    width: auto;
+}
+
+section.sec2 p{
+    color: #fff;
+    font-size: 1.6em;
+}
+
+section.sec3{
+    background: url(../imagenes/6.jpg);
+    background-size: cover;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display:inline-block;
+    padding: 0 100px;
+    
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display:block;
+    color: #fff;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+.sec4 p{
+    float: left;
+    width: 70%;
+}
+
+.sec4 p img{
+    width: 100%;
+    height: 100vh;
+}
+
+#texto_shop p{
+    float: right;
+    width: 30%;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+}
+#texto_shop a{
+    border: 5px solid goldenrod;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.6em;
+    color: red;
+    background: grey;
+}
+#texto_shop a:hover{
+    transition: 0.5s;
+    font-size: 1.7em;
+    background: rgb(119, 3, 3);
+}
+
+footer{
+    background: black;
+    color: #fff;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.sec2 div a i{
+   font-size:35px;
+   color: #fff;
+}
+
+.sec2 img{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 100px 25px;
+}
+
+.contenedor_index{
+    border: 5px solid #fff;
+    width: 33%;
+    text-transform: uppercase;
+    text-align: center;
+    padding:0;
+    margin-top:50px;
+    margin-bottom: 50px;
+    display:inline-block;
+}
+.contenedor_index p{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.socialbar ul{
+    display: block;
+}
+
+.socialbar ul li{
+    display: inline-block;
+}
+
+/*TOUR STYLE*/
+
+section.tour_sec1{
+    background-image: url(../imagenes/tour.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+
+}
+
+/* BAND STYLE*/
+
+section.band_sec1{
+    background-image: url(../imagenes/namelessghouls.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*music style*/
+
+section.music_sec1{
+    background-image: url(../imagenes/prequelle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*VIDEO STYLE*/
+
+
+/*SHOP STYLE*/
+
+section.shop_sec1 img{
+max-width: 25%;
+}
